@@ -44,17 +44,21 @@
    list-style: none;
    align-self: flex-start;
    width: auto;
-   height: 30px;
+   height: auto;
    padding: 0;
    margin: 20px;
+   flex-wrap: wrap;
 }
 
 .quizcard__tag {
    display: flex;
    justify-content: center; /* horizontal */
    align-items: center; /* vertical */
-   padding: 15px;
+   padding: 5px;
+   padding-left: 8px;
+   padding-right: 8px;
    background-color: rgb(194, 194, 194);
+   margin-top: 5px;
    margin-right: 10px;
    border: solid 1px rgb(143, 143, 143);
    border-radius: 5px;
