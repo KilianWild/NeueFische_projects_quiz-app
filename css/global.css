@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+body {
+   margin: 0;
+}
+.header {
+   background-color: aqua;
+   width: 100%;
+   height: 70px;
+   display: flex;
+   justify-content: center;
+}
+
+.header__title {
+   background-color: aqua;
+   align-self: center;
+}
+
+.quizcard__card {
+   position: relative;
+   width: 80%;
+   height: 40%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: aquamarine;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 2%;
+}
+
+.quizcard__bookmark {
+   position: absolute;
+   transform-origin: top right;
+   transform: scale(0.3);
+   right: 20px;
+   top: -10px;
+   background-color: transparent;
+   border: none;
+}
