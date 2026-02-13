@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="./css/global.css" />
+      <script src="./js/index.js" defer></script>
       <title>Quiz-App</title>
    </head>
    <body>
@@ -12,7 +13,7 @@
       </header>
 
       <main>
-         <section class="quizcard__card">
+         <section class="quizcard__card" data-js="quizcard__card">
             <p class="quizcard__question">What use do semantics have?</p>
             <p class="quizcard__answer">To increase accessability.</p>
             <button class="quizcard__show-answer">Show Answer</button>
@@ -20,88 +21,71 @@
                <li class="quizcard__tag">html</li>
                <li class="quizcard__tag">structure</li>
             </ul>
-            <button aria-label="button show answer" class="quizcard__bookmark">
-               <img src="./assets/bookmark-hollow.png" alt="button bookmark" />
-            </button>
+            <button
+               aria-label="button show answer"
+               class="quizcard__bookmark"
+               data-js="quizcard__bookmark"
+               data-bookmarked="false"
+            ></button>
          </section>
-         <section class="quizcard__card">
+         <section class="quizcard__card" data-js="quizcard__card">
             <p class="quizcard__question">What is flexbox used for?</p>
-            <p class="quizcard__answer">
-               To handle elements in either a vertical or horizontal line
-               efficiently.
-            </p>
-            <button
-               aria-label="button show answer"
-               class="quizcard__show-answer"
-            >
-               Show Answer
-            </button>
+            <p class="quizcard__answer">To handle elements in either a vertical or horizontal line efficiently.</p>
+            <button aria-label="button show answer" class="quizcard__show-answer">Show Answer</button>
             <ul class="quizcard__tag-list">
                <li class="quizcard__tag">structure</li>
             </ul>
-            <button aria-label="button bookmark" class="quizcard__bookmark">
-               <img src="./assets/bookmark-hollow.png" alt="button bookmark" />
-            </button>
-         </section>
-         <section class="quizcard__card">
-            <p class="quizcard__question">
-               What is the absolute position relativ to?
-            </p>
-            <p class="quizcard__answer">
-               To the closest ancestor that has a relative postion setting.
-            </p>
             <button
-               aria-label="button show answer"
-               class="quizcard__show-answer"
-            >
-               Show Answer
-            </button>
+               aria-label="button bookmark"
+               class="quizcard__bookmark"
+               data-js="quizcard__bookmark"
+               data-bookmarked="false"
+            ></button>
+         </section>
+         <section class="quizcard__card" data-js="quizcard__card">
+            <p class="quizcard__question">What is the absolute position relativ to?</p>
+            <p class="quizcard__answer">To the closest ancestor that has a relative postion setting.</p>
+            <button aria-label="button show answer" class="quizcard__show-answer">Show Answer</button>
             <ul class="quizcard__tag-list">
                <li class="quizcard__tag">html</li>
                <li class="quizcard__tag">structure</li>
             </ul>
-            <button aria-label="button bookmark" class="quizcard__bookmark">
-               <img src="./assets/bookmark-solid.png" alt="button bookmark" />
-            </button>
+            <button
+               aria-label="button bookmark"
+               class="quizcard__bookmark"
+               data-js="quizcard__bookmark"
+               data-bookmarked="false"
+            ></button>
          </section>
-         <section class="quizcard__card">
+         <section class="quizcard__card" data-js="quizcard__card">
             <p class="quizcard__question">What is the Z-Index?</p>
-            <p class="quizcard__answer">
-               For letting objects overlap or be under other objects.
-            </p>
-            <button
-               aria-label="button show answer"
-               class="quizcard__show-answer"
-            >
-               Show Answer
-            </button>
+            <p class="quizcard__answer">For letting objects overlap or be under other objects.</p>
+            <button aria-label="button show answer" class="quizcard__show-answer">Show Answer</button>
             <ul class="quizcard__tag-list">
                <li class="quizcard__tag">html</li>
                <li class="quizcard__tag">structure</li>
             </ul>
-            <button aria-label="button bookmark" class="quizcard__bookmark">
-               <img src="./assets/bookmark-solid.png" alt="button bookmark" />
-            </button>
+            <button
+               aria-label="button bookmark"
+               class="quizcard__bookmark"
+               data-js="quizcard__bookmark"
+               data-bookmarked="false"
+            ></button>
          </section>
-         <section class="quizcard__card">
-            <p class="quizcard__question">
-               What positioning would you use to for a navbar that is always
-               visible?
-            </p>
+         <section class="quizcard__card" data-js="quizcard__card">
+            <p class="quizcard__question">What positioning would you use to for a navbar that is always visible?</p>
             <p class="quizcard__answer">fixed.</p>
-            <button
-               aria-label="button show answer"
-               class="quizcard__show-answer"
-            >
-               Show Answer
-            </button>
+            <button aria-label="button show answer" class="quizcard__show-answer">Show Answer</button>
             <ul class="quizcard__tag-list">
                <li class="quizcard__tag">html</li>
                <li class="quizcard__tag">structure</li>
             </ul>
-            <button aria-label="button bookmark" class="quizcard__bookmark">
-               <img src="./assets/bookmark-hollow.png" alt="button bookmark" />
-            </button>
+            <button
+               aria-label="button bookmark"
+               class="quizcard__bookmark"
+               data-js="quizcard__bookmark"
+               data-bookmarked="false"
+            ></button>
          </section>
       </main>
       <footer>
@@ -112,8 +96,8 @@
             <a href="./bookmarks.html" class="navbar__button">
                <img src="./assets/bookmark-hollow.png" alt="button bookmarks" />
             </a>
-            <a href="./bookm.html" class="navbar__button">
-               <img src="./assets/bookmark-hollow.png" alt="button bookmarks" />
+            <a href="./add_question.html" class="navbar__button">
+               <img src="./assets/plus-hollow.png" alt="button add questions" />
             </a>
             <a href="./profile.html" class="navbar__button">
                <img src="./assets/user-hollow.png" alt="button user settings" />

@@ -15,11 +15,18 @@
 .quizcard__bookmark {
    position: absolute;
    transform-origin: top right;
-   transform: scale(0.3);
+   height: 40px;
+   width: 40px;
    right: 20px;
    top: -10px;
    background-color: transparent;
    border: none;
+   background-image: url("../../assets/bookmark-hollow.png");
+   background-size: contain;
+}
+.quizcard__bookmark.bookmarked {
+   background-image: url("../../assets/bookmark-solid.png");
+   background-size: contain;
 }
 
 .quizcard__question {
