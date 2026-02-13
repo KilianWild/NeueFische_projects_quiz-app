@@ -5,21 +5,31 @@
    margin-left: auto;
    margin-right: auto;
    background-color: rgb(235, 235, 235);
+   border-radius: 20px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-top: 3%;
+   margin-top: max(20px, 3%);
+
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   min-width: 300px;
 }
 
 .quizcard__bookmark {
    position: absolute;
    transform-origin: top right;
-   transform: scale(0.3);
+   height: 40px;
+   width: 40px;
    right: 20px;
    top: -10px;
    background-color: transparent;
    border: none;
+   background-image: url("../../assets/bookmark-hollow.png");
+   background-size: contain;
+}
+.quizcard__bookmark.bookmarked {
+   background-image: url("../../assets/bookmark-solid.png");
+   background-size: contain;
 }
 
 .quizcard__question {
@@ -29,14 +39,36 @@
    text-align: center;
 }
 
-.quizcard__answer {
+.quizcard__answer-field {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background-color: white;
    border: solid 1px rgb(216, 216, 216);
    border-radius: 10px;
-   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
    margin-top: 0;
    margin-left: 5%;
    margin-right: 5%;
+   margin-bottom: 20px;
+   height: 100px;
+   width: 550px;
+   transition:
+      height 0.5s ease,
+      width 0.5s ease;
+}
+.quizcard__answer-field.is-collapsed {
+   height: 55px;
+   width: 200px;
+}
+.quizcard__answer-text {
+   text-align: center;
+   opacity: 1;
+   transition: opacity 0.5s ease;
+}
+.quizcard__answer-text.is-faded {
+   opacity: 0;
 }
 
 .quizcard__show-answer {
