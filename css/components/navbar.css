@@ -4,7 +4,7 @@
    bottom: 0px;
    height: 100px;
    width: 100%;
-   background-color: aliceblue;
+   background-color: var(--navbar-color);
    justify-content: space-around;
    align-items: center;
    border-top: solid 1px;

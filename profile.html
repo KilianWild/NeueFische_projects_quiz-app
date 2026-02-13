@@ -15,19 +15,14 @@
       <main>
          <section class="profile-section">
             <div class="profile_picture-container">
-               <img
-                  src="./assets/user-solid.png"
-                  alt="profile picture"
-                  class="profile__picture"
-               />
+               <img src="./assets/user-solid.png" alt="profile picture" class="profile__picture" />
                <span class="profile__name">Kilian Wild</span>
             </div>
             <h3 class="profile__about-title">About Me</h3>
             <p class="profile__about">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Quibusdam nam omnis, odit facere nisi iure magni adipisci
-               excepturi molestias provident molestiae porro repellat pariatur
-               totam nobis aliquid perferendis fugit et.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam nam omnis, odit facere nisi iure
+               magni adipisci excepturi molestias provident molestiae porro repellat pariatur totam nobis aliquid
+               perferendis fugit et.
             </p>
             <ul class="profile__quizz-info">
                <li class="quizcard__tag">20 Q</li>
@@ -39,15 +34,12 @@
             <h2 class="profile__settings-title">Settings</h2>
             <div class="profile__setting-row">
                <span class="profile__setting-text">Dark Mode</span>
-               <button class="profile__setting-button">
-                  <img src="./assets/switch.png" alt="settings button" />
-               </button>
-            </div>
-            <div class="profile__setting-row">
-               <span class="profile__setting-text">Super Difficult</span>
-               <button class="profile__setting-button">
-                  <img src="./assets/switch.png" alt="settings button" />
-               </button>
+               <button
+                  aria-label="button setting darkmode"
+                  class="profile__setting-button"
+                  data-js="button-setting-darkmode"
+                  data-darkmode-active="false"
+               ></button>
             </div>
          </section>
       </main>

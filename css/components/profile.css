@@ -1,3 +1,7 @@
+body {
+   background-color: var(--background-color);
+}
+
 .profile-section {
    position: relative;
    width: 60%;
@@ -6,9 +10,10 @@
    margin-right: auto;
    display: flex;
    flex-direction: column;
-   background-color: rgb(235, 235, 235);
+   background-color: var(--quizcard-color);
    margin-top: 3%;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 20px;
 }
 .profile_picture-container {
    padding: 3%;
@@ -59,5 +64,12 @@
    border: none;
    background-color: transparent;
    transform-origin: center;
-   transform: scale(0.3);
+   width: 30px;
+   height: 30px;
+   margin-right: 80px;
+   background-image: url("../../assets/switch-off.png");
+   background-size: contain;
+}
+.profile__setting-button.active {
+   background-image: url("../../assets/switch-on.png");
 }

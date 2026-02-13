@@ -17,7 +17,6 @@
 
 .quizcard__bookmark {
    position: absolute;
-   transform-origin: top right;
    height: 40px;
    width: 40px;
    right: 20px;
@@ -29,7 +28,6 @@
 }
 .quizcard__bookmark.bookmarked {
    background-image: url("../../assets/bookmark-solid.png");
-   background-size: contain;
 }
 
 .quizcard__question {
@@ -102,9 +100,9 @@
    padding: 5px;
    padding-left: 8px;
    padding-right: 8px;
-   background-color: rgb(194, 194, 194);
+   background-color: var(--tag-background-color);
    margin-top: 5px;
    margin-right: 10px;
-   border: solid 1px rgb(143, 143, 143);
+   border: solid 1px var(--tag-border-color);
    border-radius: 5px;
 }
