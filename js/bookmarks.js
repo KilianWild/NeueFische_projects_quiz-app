@@ -1,8 +1,9 @@
-/* const questionCardBookmark = document.querySelector('[data-js="quizcard__bookmark"]');
+const questionCardBookmark = document.querySelector('[data-js="quizcard__bookmark"]');
 const questionCardButton_ShowAnswer = document.querySelector('[data-js="quizcard__show-answer"]');
 
 questionCardBookmark.addEventListener("click", (event) => {
    const bookmark = event.target.closest('[data-js="quizcard__bookmark"]');
+   const quizCard = event.target.closest('[data-js="quizcard__card"]');
 
    if (bookmark.dataset.bookmarked === "false") {
       bookmark.classList.add("bookmarked");
@@ -10,6 +11,7 @@ questionCardBookmark.addEventListener("click", (event) => {
    } else {
       bookmark.classList.remove("bookmarked");
       bookmark.dataset.bookmarked = false;
+      quizCard.classList.add("u-hidden");
    }
 });
 
@@ -31,4 +33,3 @@ questionCardButton_ShowAnswer.addEventListener("click", (event) => {
       answerField.style.transitionDelay = "0.5s";
    }
 });
-*/

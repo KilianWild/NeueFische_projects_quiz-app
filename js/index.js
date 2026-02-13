@@ -28,6 +28,6 @@ questionCardButton_ShowAnswer.addEventListener("click", (event) => {
       answerParagraph.classList.add("is-faded");
       answerField.classList.add("is-collapsed");
       answerParagraph.style.transitionDelay = "0.0s";
-      answerField.style.transitionDelay = "0.5s";
+      answerField.style.transitionDelay = "0.3s";
    }
 });
